@@ -19,7 +19,30 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// PostgreSQL JDBC driver
+	implementation 'org.postgresql:postgresql:42.5.0'
+
+	// MongoDB
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+	// JPA (for PostgreSQL)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Liquibase Core for SQL migrations
+	implementation 'org.liquibase:liquibase-core'
+
+	// for annotations like @getter and @setter
+	implementation 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// for dto validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// Spring Boot Test Starter
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// JUnit platform launcher for running tests
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

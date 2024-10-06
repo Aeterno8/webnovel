@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0001-create-author-and-novel-tables" author="Aleksa Savic">
+        <sqlFile path="./0001-create-author-and-novel-tables.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="0002-add-timestamps-and-audit-columns" author="Aleksa Savic">
+        <sqlFile path="./0002-add-timestamps-and-audit-columns.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="0003-add-user-table" author="Aleksa Savic">
+        <sqlFile path="./0003-add-user-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="0004-add-constraints-to-authors-novels-table" author="Aleksa Savic">
+        <sqlFile path="./0004-add-constraints-to-authors-novels-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>
