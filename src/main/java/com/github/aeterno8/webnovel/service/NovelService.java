@@ -5,7 +5,7 @@ import com.github.aeterno8.webnovel.models.Novel;
 import java.util.List;
 import java.util.Optional;
 
-public interface INovelService {
+public interface NovelService {
 
     Novel uploadNovel(NovelUploadDTO novelUploadDTO);
 

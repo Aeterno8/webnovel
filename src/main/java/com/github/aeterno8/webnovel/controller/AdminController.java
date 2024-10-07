@@ -1,7 +1,7 @@
 package com.github.aeterno8.webnovel.controller;
 
 import com.github.aeterno8.webnovel.DTO.NovelUploadDTO;
-import com.github.aeterno8.webnovel.service.INovelService;
+import com.github.aeterno8.webnovel.service.NovelService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class AdminController {
 
-    private final INovelService novelService;
+    private final NovelService novelService;
 
     @Autowired
-    public AdminController(INovelService novelService) {
+    public AdminController(NovelService novelService) {
         this.novelService = novelService;
     }
 

@@ -5,7 +5,8 @@ import com.github.aeterno8.webnovel.DTO.Metadata;
 import com.github.aeterno8.webnovel.DTO.NovelUploadDTO;
 import com.github.aeterno8.webnovel.models.Novel;
 import com.github.aeterno8.webnovel.repository.NovelRepository;
-import com.github.aeterno8.webnovel.service.INovelService;
+import com.github.aeterno8.webnovel.service.AuthorService;
+import com.github.aeterno8.webnovel.service.NovelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,12 +19,12 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 @Service
-public class NovelService implements INovelService {
+public class NovelServiceImpl implements NovelService {
     private final NovelRepository novelRepository;
     private final AuthorService authorService;
 
     @Autowired
-    public NovelService(NovelRepository novelRepository, AuthorService authorService) {
+    public NovelServiceImpl(NovelRepository novelRepository, AuthorService authorService) {
         this.novelRepository = novelRepository;
         this.authorService = authorService;
     }
