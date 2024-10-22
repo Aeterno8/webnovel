@@ -8,6 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+
 @RestController
 @RequestMapping("admin")
 @Validated
@@ -21,7 +23,7 @@ public class AdminController {
     }
 
     @PostMapping("/upload-novel")
-    public ResponseEntity<String> uploadNovel(@Valid @ModelAttribute NovelUploadDTO novelUploadDTO) {
+    public ResponseEntity<String> uploadNovel(@Valid @ModelAttribute NovelUploadDTO novelUploadDTO) throws IOException {
         novelService.uploadNovel(novelUploadDTO);
         return ResponseEntity.ok("File uploaded successfully");
     }

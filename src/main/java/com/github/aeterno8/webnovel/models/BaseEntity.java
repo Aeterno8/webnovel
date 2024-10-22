@@ -11,7 +11,6 @@ import java.io.Serializable;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 
-
 @MappedSuperclass
 @Getter
 @Setter

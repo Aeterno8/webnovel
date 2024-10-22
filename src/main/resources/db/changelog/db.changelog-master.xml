@@ -17,5 +17,8 @@
     <changeSet id="0004-add-constraints-to-authors-novels-table" author="Aleksa Savic">
         <sqlFile path="./0004-add-constraints-to-authors-novels-table.sql" relativeToChangelogFile="true"/>
     </changeSet>
+    <changeSet id="0005-add-unique-constraint-to-authors-table" author="Aleksa Savic">
+        <sqlFile path="./0005-add-unique-constraint-to-authors-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
 
 </databaseChangeLog>
