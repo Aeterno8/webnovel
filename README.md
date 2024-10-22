@@ -7,6 +7,11 @@ This project aims to build a backend system for efficiently storing and managing
 ## Features
 
 - [ ] REST API for accessing and managing webnovel content (**ONGOING**)
+  - [X] Implement novel upload functionality
+  - [X] Validate novel upload inputs
+  - [X] Ensure successful processing of uploaded files
+  - [X] Implement error handling for file upload issues
+  - [ ] Create unit tests for upload functionality
 - [ ] User authentication and authorization (**ONGOING**)
 
 ## Planned Features
